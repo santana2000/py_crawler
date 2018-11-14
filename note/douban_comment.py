@@ -16,4 +16,15 @@ file=s.xpath('//*[@id="comments"]/ul[1]/li/div[2]/p/span/text()')
 #打印抓取的信息
 print(file)
 
+# with open('pinglun.txt','w',encoding='utf-8') as f:
+#     for i in file:
+#         print(i)
+#         f.write(i)
+
+import pandas as pd
+df = pd.DataFrame(file)
+df.to_excel('pinglun.xlsx')
+
+
 # //*[@id="comments"]/ul[1]/li[1]/div[2]/p/span
+# //*[@id="comments"]/ul[1]/li[9]/div[1]/a/img
