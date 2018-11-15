@@ -1,9 +1,9 @@
-import urllib
-import re
-import time
 
-from urllib import  request
+# 通过requests+soup实现爬取图片
+
+import time
 import requests
+from urllib import  request
 from bs4 import BeautifulSoup
 
 # https://book.douban.com/top250?start=0
@@ -22,6 +22,8 @@ for i in range(2):  #0~9
         print(img['src'])
         request.urlretrieve(img['src'], 'C:/Users/tesla/Desktop/top250\%s.jpg'%x)
         x += 1
+
+# for k,v in xxx
 
     time.sleep(1)
 

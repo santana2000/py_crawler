@@ -19,6 +19,9 @@ print(len(friends))
 friends.append('bentat')
 print(len(friends))
 
+#两种字符串格式化的方法
+print("hello,%s,I'm %s" % ('accurate','type'))
+print("hello,{},I'm {}".format('niko','simple'))
 
 def check_ticket(price):
     if(price>200):
@@ -29,5 +32,7 @@ def check_ticket(price):
 price1 = int(input())
 
 check_ticket(price1)
+
+
 
 

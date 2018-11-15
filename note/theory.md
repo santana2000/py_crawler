@@ -3,12 +3,12 @@
 通过程序模拟浏览器请求站点的行为
 
 ## 知识储备
-list
-dict
-slice
-os
-io
-requests
+list  
+dict  
+slice  
+os  
+io---stream是单向的，从磁盘到内存或者反之  
+requests  
 lxml
 
 ## 流程
@@ -20,7 +20,11 @@ e. 存储处理好的目标内容 （比如放到 MongoDB 之类的数据库，�
 
 
 
-Requests+Xpath 实现通用爬虫套路
+* Requests+Xpath 实现通用爬虫套路  
+
+> 不同库实现打开url,读取url内容的方式有所不同  
+> 图片用库里的函数下载或者原生的xx.write(xx.content)
+
 
 ## 细节
 缺失值处理：对缺失数据行进行删除或填充  

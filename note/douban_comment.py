@@ -7,6 +7,7 @@ url='https://book.douban.com/subject/1084336/comments/'
 
 #用requests库的get方法下载网页
 r=requests.get(url).text
+# print(r)
 
 #解析网页并且定位短评
 s=etree.HTML(r)
