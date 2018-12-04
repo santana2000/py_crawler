@@ -1,4 +1,6 @@
 
+# python基础知识
+
 name = 'k'
 print('hi!',name)
 
